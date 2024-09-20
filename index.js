@@ -6,7 +6,25 @@ const resultDisplay = document.getElementById("playerDisplay");
 function startGame(playerChoice){
 
     const computerChoice = choices[Math.floor(Math.random() *3)];
+    let result = "";
+    
 
-    console.log(computerChoice);
+    if(playerChoice === computerChoice){
+        result = "It's a tie!";
+    } 
+        else if (
+            (playerChoice === "rock" && computerChoice === "scissors") ||
+            (playerChoice === "paper" && computerChoice === "rock") ||
+            (playerChoice === "scissors" && computerChoice === "paper")
+        ){
+            result = "You win!";
+        } 
+        else {
+            result = "Computer wins!"
+        }
+
+        playerDisplay.textContent = `Player: ${playerChoice}`;
+        computerDisplay.textContent = `Computer: ${computerChoice}`;
+        resultDisplay.textContent = result;
 
 }
