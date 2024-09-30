@@ -23,6 +23,7 @@ function startGame(playerChoice){
             result = "Computer wins!"
         }
 
+
         playerDisplay.textContent = `Player: ${playerChoice}`;
         computerDisplay.textContent = `Computer: ${computerChoice}`;
         resultDisplay.textContent = result;
