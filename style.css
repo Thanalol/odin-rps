@@ -31,7 +31,7 @@ h1 {
 
 }
 
-#playerDisplay, #computerDisplay {
+#playerDisplay, #computerDisplay, #playerScoreDisplay, #computerScoreDisplay {
     font-size: 3rem;
 } 
 
